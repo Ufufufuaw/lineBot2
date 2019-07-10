@@ -23,10 +23,10 @@ def callback():
     user = decoded['originalDetectIntentRequst']['payload']['data']['replayToken']
     userText = decoded['queryResult']['intent']['displayName']
     #sendText(user,userText)
-    if (userText == 'อยากกลับบ้าน') :
-        sendText(user'จงเรียนต่อไปซะ เจ้ามนุษย์')
-    elif (userText == 'ไม่อยากกลับ') :
-        sendText(user'-_-')
+    if (userText == 'สวัสดี') :
+        sendText(user'ดีคับ')
+    elif (userText == 'ไปนะ') :
+        sendText(user'แล้วเจอกันคับ')
     else :
         sendText(user'again please')
 
